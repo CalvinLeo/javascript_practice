@@ -89,3 +89,22 @@ div>p {
     <p></p>
 </div>
 ```
+**群选择器：** ，分隔 选择器1, 选择器2 { 属性： 值 }
+```
+.first, span {
+    margin: 0;
+    padding: 0;
+}
+
+<div>
+    <p class="first"></p>
+    <span></span>
+    <p></p>
+</div>
+```
+**伪类选择器：** : + 属性 { 属性： 值 } 
+```
+a:hover {
+    color: blue;
+}
+```
