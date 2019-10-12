@@ -1,0 +1,96 @@
+<!--
+ * @Description: In User Settings Edit
+ * @Author: your name
+ * @Date: 2019-10-07 15:50:32
+ * @LastEditTime: 2019-10-07 15:55:41
+ * @LastEditors: Please set LastEditors
+ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        a {
+            display: block;
+            width: 658px;
+            height: 223px;
+            left: 50%;
+            margin-left: -329px;
+            position: relative;
+        }
+        .mask {
+            width: 100%;
+            height: 100%;
+            top: 0;
+            position: absolute;
+            background-color: rgba(0, 0, 0, 0.5);
+            display: none;
+            background-image: url(images/icon/success.png);
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        a:hover .mask {
+            display: block;
+        }
+
+        textarea {
+            resize: none;  /* 防止拖拽 */
+            outline: none; /* 取消边框 */
+        }
+
+        .vertical img {
+            margin-top: 30px;
+            vertical-align: bottom;
+        }
+
+        li {
+            width: 200px;
+            height: 30px;
+            border: 1px solid pink;
+            line-height: 30px;
+            /* 以下三行做文字省略缺一不可 */
+            white-space: nowrap; /* 不换行，一行显示 */
+            overflow: hidden;   /* 溢出显示 */
+            text-overflow: ellipsis; /* 溢出部分显示省略号 */
+        }
+
+    </style>
+</head>
+<body>
+    <!-- 关于 层叠样式的先后顺序， z-index 默认是0 越大图层越靠上 -->
+    <!-- 如果取值相同 根据书写顺序后来居上 -->
+    <!-- 后面数字一定不能加单位 -->
+    <!-- 只有相对定位，绝对定位，固定定位有此属性，其余标准流，浮动，静态定位都无此属性亦不可制定此属性 -->
+
+    <!-- 隐藏：display: none 显示：display: block 不保留原位置 -->
+    <!-- 隐藏：visibility: hidden, 显示：visibility: visible 保留原来位置 -->
+    <!-- overflow: hidden 溢出隐藏 scroll：滚动 auto：自动-->
+    <!-- cursor: 鼠标样式 pointer: 手 text: 输入框 move: 移动状态 default: 默认 outline: none 取消边框 -->
+    <!-- vertical-align 垂直居中 baseline 默认样式 top 顶部对齐，middle 中间对齐， bottom 底线对齐 -->
+
+    <a href="#">
+        <img src="images/demo7/banner_1.jpeg" alt="">
+        <div class="mask"></div>
+    </a>
+
+    <div class="vertical">
+        <img src="images/demo7/banner_1.jpeg" alt="">
+        my name is hahahah
+    </div>
+
+    <li>文字文字文字文字文字文字文字文字文字文字文字文字</li>
+    <li>文字文字文字文字文字文字文字文字文字文字文字文字</li>
+    <li>文字文字文字文字文字文字文字文字文字文字文字文字</li>
+    <li>文字文字文字文字文字文字文字文字文字文字文字文字</li>
+    <li>文字文字文字文字文字文字文字文字文字文字文字文字</li>
+
+</body>
+</html>

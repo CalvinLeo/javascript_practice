@@ -1,0 +1,97 @@
+<!--
+ * @Description: In User Settings Edit
+ * @Author: your name
+ * @Date: 2019-10-02 15:22:00
+ * @LastEditTime: 2019-10-02 16:55:04
+ * @LastEditors: Please set LastEditors
+ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    
+    <!--
+    <style>
+        /* a:link { // 链接伪类 未访问时候的样式
+            text-decoration: none; // 下划线样式
+            color: #333;
+            font-size:  25px;
+            font-weight: bold;
+        }
+        a:visited { // 访问过的状态
+            color: orchid;
+        }
+        a:hover { // 鼠标经过时候的状态
+            color: #f10215;
+        }
+        a:active { // 按下鼠标时候的状态
+            color: pink;
+        } */
+
+        /* a标签样式 hover 鼠标经过的状态 */
+        /* a {
+            color: #333;
+            text-decoration: none;
+            font-size: 25px;
+            font-weight: 700;
+        }
+        a:hover {
+            color: #f10215;
+        } */
+    </style>
+    -->
+    <style>
+        /* 登录的链接为红色 */
+        .site-r a {
+            color: red;
+        }
+        /* 后代选择器 类 空格 类 表示：主导航栏中的 a 都变成蓝色 */
+        .nav a {
+            color: blue;
+        }
+        /* 并集选择器 类 逗号 类 是与的关系 表示: 主导航和副导航栏中的文字都是 14像素 且 微软雅黑 */
+        .nav, .sitenav {
+            font: 14px "微软雅黑";
+        }
+        /* 子代选择器 > “亲儿子” 一层一层的选择 表示： 主导航栏中的一级a 全变成绿色 */
+        .nav > ul > li > a {
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <a href="#">我是一个网站</a>
+
+    <br />
+
+    <!-- TEST -->
+    <!-- 要求：1、链接登录的颜色为红色，同时主导航栏的链接为蓝色 -->
+    <!-- 要求：2、主导航栏和测导航栏的文字都是14像素且是微软雅黑 -->
+    <!-- 要求：3、主导航栏一级菜单里面的链接颜色变成绿色 -->
+    <div class="nav">
+        <ul>
+            <li><a href="#">公司首页</a></li>
+            <li><a href="#">公司简介</a></li>
+            <li><a href="#">公司产品</a></li>
+            <li>
+                <a href="#">联系我们</a>
+                <ul>
+                    <li><a href="#">邮箱</a></li>
+                    <li><a href="#">电话</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <div class="sitenav">
+        <div class="site-l">左侧导航栏</div>
+        <div class="site-r"><a href="#">登录</a></div>
+    </div>
+
+    <!-- 块级元素：<div>、<h>、<p> 独占一行、有宽高 -->
+    <!-- 行内元素：<span>、<a>、<strong>、<b>、<em>、<i>、<del> 宽高无效，默认宽高是内容本身的高度 -->
+    <!-- 行内块元素：<img>、<input>、<td> 可以设置边框和宽高 -->
+</body>
+</html>

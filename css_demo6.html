@@ -1,0 +1,96 @@
+<!--
+ * @Description: In User Settings Edit
+ * @Author: your name
+ * @Date: 2019-10-03 22:12:59
+ * @LastEditTime: 2019-10-04 19:50:28
+ * @LastEditors: Please set LastEditors
+ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        /* 清除内外边距 */
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+        .nav {
+            height: 50px;
+            background-color: #fcfcfc;
+            border-top: 3px solid #FF8500;
+            border-bottom: 1px solid #EDEEF0;
+        }
+        .nav a {
+            font-size: 14px;
+            text-decoration: none;
+            color: #4c4c4c;
+            display: inline-block;
+            height: 50px;
+            line-height: 50px;
+            padding: 0px 18px; /* 上下 0px 左右 18px */
+            /* padding: 10px 20px 30px; 上10px 左右20px 下30px */
+            /* padding: 10px 20px 30px 40px; 上10px 右20px 下30px 左40px */
+            /* padding 会撑开带有width 和 height 的盒子，所以在布局时需要根据padding的大小对宽高作相应处理 */
+        }
+        .nav a:hover {
+            background-color: #EDEEF0;
+            color: #FF8500;
+        }
+        .bigBox {
+            background-color: red;
+            width: 200px;
+            height: 200px;
+            padding-left: 100px;
+            padding-top: 100px;
+            /* box-shadow: 2px 2px 10px 2px #4c4c4c; */
+        }
+        .smallBox {
+            background-color: blue;
+            width: 100px;
+            height: 100px;
+        }
+        .smallBox:hover { /* 鼠标经过盒子的高亮状态 */
+            box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.1);
+        }
+        .shadowBox {
+            width: 200px;
+            height: 200px;
+            background-color: aqua;
+            margin-top: 20px;
+        }
+        .shadowBox a {
+            width: 200px;
+            height: 200px;
+            text-decoration: none;
+            text-align: center;
+            font-size: 14px;
+            display: inline-block;
+            line-height: 200px;
+        }
+        .shadowBox a:hover {
+            box-shadow: 2px 2px 5px 2px #4c4c4c;
+        }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <a href="#">首页</a>
+        <a href="#">新闻客户端</a>
+        <a href="#">设为首页</a>
+        <a href="#">奔跑吧</a>
+    </div>
+
+    <div class="bigBox">
+        <div class="smallBox"></div>
+    </div>
+
+    <div class="shadowBox">
+        <a href="#">我是一个链接</a>
+    </div>
+
+</body>
+</html>

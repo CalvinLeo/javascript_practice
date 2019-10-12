@@ -1,0 +1,162 @@
+<!--
+ * @Description: In User Settings Edit
+ * @Author: your name
+ * @Date: 2019-10-04 23:38:54
+ * @LastEditTime: 2019-10-05 22:39:34
+ * @LastEditors: Please set LastEditors
+ -->
+ 
+<!-- 清除浮动: 解决父视图因为子孩子的高度为0的问题 -->
+<!-- 方法1：添加标签法，最后一个元素的结尾 使用 clear: both的样式 -->
+<!-- 方法2：overflow: hidden 给父视图添加 -->
+<!-- 方法3：伪元素：after -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>云道首页</title>
+    <link rel="stylesheet" href="css/demo7.css" />
+</head>
+<body>
+<!-- 顶部导航栏 -->
+    <div class="header">
+        <div class="inner-header">
+            <div class="logo">
+                <img src="http://www.hbyundao.com/res/static/img/logo.png" alt="云道科技" />
+            </div>
+            <div class="nav">            
+                <ul>
+                    <li><a href="#">首页</a></li>
+                    <li><a href="#">云道商场</a></li>
+                    <li><a href="#">智慧门店</a></li>
+                    <li><a href="#">营销平台</a></li>
+                    <li><a href="#">媒体联盟</a></li>
+                    <li><a href="#">关于云道</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+<!-- banner -->
+    <!-- banner start -->
+    <div class="banner"></div>
+    <!-- banner end -->
+<!-- service -->
+    <!-- service start -->
+    <div class="service">
+        <div class="service-header">
+            <h3>我们的服务</h3>
+            <p>
+                这条规则说明所有沃尔玛员工应该在收到顾客、供应商或其他员工的电话的当天日落之前对这些电话作出答复。这正是沃尔玛对顾客作出友好服务之承诺的一个例子。迅速回应您表明我们关心您。我们不一定要在日落之前解决每一个问题或者完成每一项任务，但我们应与您保持联络，这体现了我们公司的一条基本原则──即我们关心顾客。
+            </p>
+        </div>
+        <div class="service-body">
+            <ul>
+                <li>
+                    <!-- <img class="seller" src="" alt="图片"> -->
+                    <div class="seller"></div>
+                    <h3>我是卖家</h3>
+                    <p>
+                        shopcmd云电商解决方案，我们不仅仅是领先的独立商业城市建站系统。
+                        我们从互联网时代品牌建设和品牌营销的全新视角，
+                        赋予了品牌商城及独立电商更大的主存空间和存在价值！
+                    </p>
+                    <a href="#">我要建站</a>
+                </li>
+                <li class="yingxiao">
+                    <div class="seller"></div>
+                    <h3>我是哈哈</h3>
+                    <p>
+                        shopcmd云电商解决方案，我们不仅仅是领先的独立商业城市建站系统。
+                        我们从互联网时代品牌建设和品牌营销的全新视角，
+                        赋予了品牌商城及独立电商更大的主存空间和存在价值！
+                    </p>
+                    <a href="#">我要建站</a>
+                </li>
+                <li>
+                    <div class="seller"></div>
+                    <h3>我是baba</h3>
+                    <p>
+                        shopcmd云电商解决方案，我们不仅仅是领先的独立商业城市建站系统。
+                        我们从互联网时代品牌建设和品牌营销的全新视角，
+                        赋予了品牌商城及独立电商更大的主存空间和存在价值！
+                    </p>
+                    <a href="#">我要建站</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- service end -->
+<!-- 经典案例模块开始 -->
+    <div class="case">
+        <div class="case-top">
+            <h3>经典案例</h3>
+        </div>
+        <div class="case-body clearfix">
+            <ul>
+                <li>
+                    <a href="#"></a>
+                    <img src="images/image/image1.jpg" width="270px" height="200px" alt="">
+                    <div class="text">我们是非常专业的技术团队</div>
+                    <div class="mask"></div>
+                </li>
+                <li class="middle">
+                    <a href="#"></a>
+                    <img src="images/image/image2.jpg" width="270px" height="200px" alt="">
+                    <div class="text">这是一个非常好看的图片</div>
+                    <div class="mask"></div>
+                </li>
+                <li>
+                    <a href="#"></a>
+                    <img src="images/image/image3.jpg" width="270px" height="200px" alt="">
+                    <div class="text">talk is cheap show me the code</div>
+                    <div class="mask"></div>
+                </li>
+            </ul>
+            <a href="#" class="left"><</a>
+            <a href="#" class="right">></a>
+        </div>
+    </div>
+<!-- 经典案例模块结束 -->
+<!-- 合作媒体开始 -->
+    <div class="cooperation">
+            <div class="cooperation-top">
+                <h3>合作媒体</h3>
+            </div>
+            <div class="cooperation-body clearfix">
+                <ul class="clearfix">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+        </div>
+<!-- 合作媒体结束 -->
+<!-- 底部开始 -->
+    <div class="footer">
+        <div class="subnav">
+            <a href="#">首页</a> |
+            <a href="#">官网云商城</a> |
+            <a href="#">智慧门店</a> |
+            <a href="#">营销平台</a> |
+            <a href="#">媒体联盟</a> |
+            <a href="#">关于我们</a>
+            <p>Copyright ©1996-2019 SINA Corporation, All Rights Reserved</p>
+        </div>
+    </div>
+<!-- 底部结束 -->
+</body>
+</html>

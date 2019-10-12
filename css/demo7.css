@@ -1,0 +1,351 @@
+ /*  * {
+     margin: 0;
+     padding: 0;
+ }
+
+ body {
+     background-color: #fafafa;
+ }
+
+ .clearfix:after {
+     content: ""; 
+     display: block; 
+     height: 0;
+     clear: both;
+     visibility: hidden;
+ } */
+ 
+ * {
+     margin: 0;
+     padding: 0;
+ }
+
+ body {
+     background-color: #fafafa;
+ }
+
+ .clearfix:after {
+     content: ""; 
+     display: block; 
+     height: 0;
+     clear: both;
+     visibility: hidden;
+ }
+ 
+ .clearfix {
+     *zoom: 1;
+ }
+
+ .nav li {
+     list-style: none;
+     float: left;
+ }
+
+ /* header头部 */
+ .header {
+     height: 100px;
+     background-color: #fdfdfd;
+     margin: 0 auto;
+ }
+
+ .inner-header {
+     width: 900px;
+     height: 100px;
+     /* background-color: pink; */
+     margin: 0 auto;
+     line-height: 100px;
+ }
+
+ .inner-header .logo img {
+     width: 252px;
+     height: 100px;
+     float: left;
+ }
+ .inner-header .nav {
+     float: right;
+     height: 100px;
+ }
+
+ .nav li a {
+     text-decoration: none;
+     /* line-height: 100px; */
+     font-size: 14px;
+     color: #333;
+     padding: 0 15px;
+ }
+ 
+ .nav li a:hover {
+     color: dodgerblue;
+ }
+
+ /* banner */
+.banner {
+    height: 493px;
+    background-image: url(../images/demo7/banner_2.jpeg);
+    background-position: top center;
+    background-repeat: no-repeat;
+}
+
+/* 我的服务开始 */
+.service {
+    /* height: 700px; */
+    width: 900px;
+    /* background-color: pink; */
+    margin: 50px auto 0;
+    overflow: hidden; /* 内容视图的上边距不影响父视图的上边距高度 */
+}
+
+.service .service-header {
+    border-top: 1px solid #ccc;
+    margin: 10px 50px 0;
+}
+
+.service .service-header h3 {
+    text-align: center;
+    width: 110px;
+    background-color: #fafafa;
+    /* margin-top: -15px; */
+    margin: -15px auto 0;
+}
+
+.service .service-header p {
+    text-align: center;
+    color: #666;
+    font-size: 14px;
+    line-height: 25px;
+    margin-top: 15px;
+}
+
+.service-body {
+    margin-top: 40px;
+    width: 900px;
+    overflow: hidden;
+}
+
+.service-body li {
+    width: 268px;
+    height: 550px;
+    float: left;
+    list-style: none;
+    overflow: auto;
+    background-color: white;
+    border: 1px solid #e7e8e9;
+    border-radius: 3px;
+}
+
+.service-body .yingxiao {
+    margin: 0 45px;
+}
+
+.service-body .seller {
+    width: 220px;
+    height: 120px;
+    margin: 40px auto;
+    background-color: green;
+}
+
+.service-body h3 {
+    text-align: center;
+    font-weight: normal;
+    font-size: 18px;
+    height: 40px;
+}
+
+.service-body li p {
+    text-align: center;
+    width: 220px;
+    color: #666;
+    font-size: 14px;
+    margin: 0 auto;
+    line-height: 26px;
+}
+
+.service-body li a {
+    width: 148px;
+    height: 40px;
+    margin: 30px auto 0;
+    display: block;
+    border: 1px solid #ff9412;
+    text-align: center;
+    line-height: 40px;
+    text-decoration: none;
+    color: #ff9412;
+    font-size: 12px;
+    background-color: #fff;
+    border-radius: 4px;
+}
+
+.service-body li a:hover {
+    color: #fff;
+    background-color: #ff9412;
+}
+/* 我的服务结束 */
+
+/* 经典案例开始 */
+.case {
+    width: 900px;
+    margin: 50px auto 0;
+}
+
+.case-top {
+    border-top: 1px solid #ccc;
+    margin: 10px 50px 0;
+}
+
+.case h3 {
+    width: 110px;
+    background-color: #fafafa;
+    text-align: center;
+    margin: -15px auto;
+}
+
+.case .case-body {
+    margin: 50px 0;
+    background-color: #fff;
+    position: relative;
+}
+
+.case-body li {
+    width: 270px;
+    height: 200px;
+    background-color: gray;
+    float: left;
+    list-style: none;
+    position: relative;
+}
+
+.case-body .middle {
+    margin: 0 45px;
+}
+
+.case-body .text {
+    height: 45px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    bottom: 0;
+    font-size: 13px;
+    color: #fafafa;
+    line-height: 45px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.case-body .mask {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-image: url(../images/icon/magnifying_glass.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: none;
+}
+
+.case-body li:hover .mask {
+    display: block;
+}
+
+.case-body .left, .right {
+    width: 60px;
+    height: 60px;
+    background-color: rgba(0, 0, 0, 0.4);
+    position: absolute;
+    text-decoration: none;
+    top: 50%;
+    margin-top: -30px;
+    line-height: 60px;
+    text-align: center;
+    color: white;
+    font-size: 24px;
+    border-radius: 30px;
+}
+
+.case-body a:hover {
+    background-color: royalblue;
+}
+
+.left {
+    left: -90px;
+}
+
+.right {
+    right: -90px;
+}
+
+/* 经典案例结束 */
+
+/* 合作媒体开始 */
+.cooperation {
+    width: 900px;
+    margin: 50px auto 100px;
+}
+
+.cooperation .cooperation-top {
+    border-top: 1px solid #ccc;
+    margin: 10px 50px 0;
+}
+
+.cooperation h3 {
+    width: 110px;
+    background-color: #fafafa;
+    text-align: center;
+    margin: -15px auto;
+}
+
+.cooperation-body {
+    width: 899px;
+    height: 240px;
+    margin: 50px 0 0;
+    overflow: hidden;
+}
+
+.cooperation-body ul {
+    width: 900px;
+    height: 241px;
+}
+
+.cooperation-body li {
+    width: 179px;
+    height: 80px;
+    border-right: 1px dashed #ccc;
+    border-bottom: 1px dashed #ccc;
+    float: left;
+    list-style: none;
+}
+/* 合作媒体结束 */
+
+/* 底部通栏开始 */
+.footer {
+    background-color: #212425;
+    height: 165px;
+    overflow: hidden;
+}
+
+.footer .subnav {
+    text-align: center;
+    margin-top: 50px;
+    color: #f0f1f1;
+    font-size: 11px;
+}
+
+.footer .subnav a {
+    color:  #f0f1f1;
+    text-decoration: none;
+    font-size: 15px;
+    margin: 0 15px;
+}
+
+.subnav a:hover {
+    color: #2288f6;
+    text-decoration: underline;
+}
+
+.subnav p {
+    text-align: center;
+    color: #888888;
+    margin: 30px;
+}
+/* 底部通栏结束 */

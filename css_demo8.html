@@ -1,0 +1,101 @@
+<!--
+ * @Description: 定位模式转换：标准流模式中盒子默认是通栏展示，但是当盒子加入了定位后，必须要设置宽度，不然会变成行内块元素消失掉
+ * @Author: your name
+ * @Date: 2019-10-06 17:09:09
+ * @LastEditTime: 2019-10-06 19:26:38
+ * @LastEditors: Please set LastEditors
+ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            height: 2000px;
+        }
+
+        .bg {
+            width: 658px;
+            height: 223px;
+            background-color: pink;
+            position: relative;
+            top: 50px;
+            left: 50%;
+            margin-left: -329px;
+        }
+
+        .nav {
+            width: 420px;
+            height: 50px;
+            background-color: rgba(0, 0, 0, 0.6);
+            position: absolute;
+            left: 50%;
+            bottom: 0;
+            margin-left: -210px;
+            /* top: 100%;
+            margin-top: -50px; */
+        }
+
+        .nav li {
+            list-style: none;
+            float: left;
+        }
+
+        .nav li a {
+            width: 70px;
+            text-decoration: none;
+            text-align: center;
+            line-height: 50px;
+            color: #fff;
+            display: block;
+            margin: 0 auto;
+            font-size: 14px;
+        }
+
+        .nav li a:hover {
+            color: #000;
+            background-color: #fff;
+        }
+
+        .ad-l, .ad-r {
+            position: fixed;
+            top: 100px;
+            background-color: pink;
+            width: 100px;
+            height: 300px;
+        }
+
+        .ad-r {
+            right: 0;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="bg">
+        <a href="#">
+            <img src="images/demo7/banner_1.jpeg" alt="">
+        </a>
+        <div class="nav">
+            <ul>
+                <li><a href="#">顺丰快递</a></li>
+                <li><a href="#">顺丰慢递</a></li>
+                <li><a href="#">中通快递</a></li>
+                <li><a href="#">中通慢递</a></li>
+                <li><a href="#">圆通快递</a></li>
+                <li><a href="#">圆通慢递</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="ad-l"></div>
+    <div class="ad-r"></div>
+</body>
+</html>
