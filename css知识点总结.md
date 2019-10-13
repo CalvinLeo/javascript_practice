@@ -1,4 +1,13 @@
+<!--
+ * @Description: In User Settings Edit
+ * @Author: your name
+ * @Date: 2019-10-13 21:38:27
+ * @LastEditTime: 2019-10-13 22:12:20
+ * @LastEditors: Please set LastEditors
+ -->
 # CSS知识点总结
+
+#### 样式
 **样式：** 选择器 { 属性 ： 值}
 
 **标签选择器:** 标签 { 属性： 值 }
@@ -94,4 +103,34 @@ div>p {
 a:hover {
     color: blue;
 }
+```
+
+#### 字体图标
+
+>本质是字体，可以任意改变大小、颜色、透明度等。把所有的图标都打包成字体库，减少请求。具有矢量性，放大时可以保证清晰度。几乎支持所有的浏览器，移动端设备必备良药
+
+**网址：**
+
+* icomoon字体：https://icomoon.io/
+* 阿里 icon font http://www.iconfont.cn 
+* fontello字体 http://fontello.com
+
+**使用**
+
+```
+<style>
+    @font-face {
+        font-family: 'icomoon'; 
+        src:  url('fonts/icomoon.eot?mcsslk');
+        src:  url('fonts/icomoon.eot?mcsslk#iefix') format('embedded-opentype'),
+  	    url('fonts/icomoon.ttf?mcsslk') format('truetype'),
+        url('fonts/icomoon.woff?mcsslk') format('woff'),
+        url('fonts/icomoon.svg?mcsslk#icomoon') format('svg');
+        font-weight: normal;
+        font-style: normal;
+    }
+    span {
+        font-family: "icomoon";
+    }
+</style>
 ```
