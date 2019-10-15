@@ -2,3 +2,16 @@
     margin: 0;
     padding: 0;
 }
+
+.w {
+    width: 1190px;
+    margin: 0 auto;
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}

@@ -6,9 +6,11 @@
 }
 
 .top .top-container {
-    margin: 0 auto;
+    position: relative;
     height: 100%;
-    width: 990px;
+    width: 1190px;
+    margin-left: auto;
+    margin-right: auto;
     background-image: url(https://img30.360buyimg.com/da/jfs/t1/77866/8/13108/64252/5da51e83E359aa7da/95d397fd59af5ea9.jpg);
 }
 
@@ -22,3 +24,38 @@
 .top a:hover {
     cursor: pointer;
 }
+
+.top .top-close {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    right: 0;
+    top: 8px;
+    background-color: #fff;
+}
+
+.top .top-close:hover {
+    cursor: pointer;
+}
+
+/* 顶部通栏结束 */
+
+/* 快捷导航栏开始 */
+
+.shortcut {
+    height: 30px;
+    background-color: #e3e4e5;
+    border-bottom: 1px solid #ddd;
+}
+
+.shortcut li {
+    list-style: none;
+    float: right;
+    margin: 0 20px;
+}
+
+.shortcut li a {
+    text-decoration: none;
+}
+
+/* 快捷导航栏结束 */
