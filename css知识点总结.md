@@ -121,18 +121,21 @@ a:hover {
 
 **网址：**
 
-* icomoon字体：https://icomoon.io/
-* 阿里 icon font http://www.iconfont.cn 
-* fontello字体 http://fontello.com
+* [icomoon字体][1]
+* [阿里 icon font][2] 
+* [fontello字体][3] 
 
+[1]:https://icomoon.io/
+[2]:http://www.iconfont.cn
+[3]:http://fontello.com
 **使用**
 
 ```
 <style>
     @font-face {
         font-family: 'icomoon'; 
-        src:  url('fonts/icomoon.eot?mcsslk');
-        src:  url('fonts/icomoon.eot?mcsslk#iefix') format('embedded-opentype'),
+        src:url('fonts/icomoon.eot?mcsslk');
+        src:url('fonts/icomoon.eot?mcsslk#iefix') format('embedded-opentype'),
   	    url('fonts/icomoon.ttf?mcsslk') format('truetype'),
         url('fonts/icomoon.woff?mcsslk') format('woff'),
         url('fonts/icomoon.svg?mcsslk#icomoon') format('svg');
