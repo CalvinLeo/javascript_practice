@@ -1,0 +1,24 @@
+/* 顶部开始 */
+.top {
+    height: 80px;
+    background-color: rgb(47, 13, 29);
+    position: relative;
+}
+
+.top .top-container {
+    margin: 0 auto;
+    height: 100%;
+    width: 990px;
+    background-image: url(https://img30.360buyimg.com/da/jfs/t1/77866/8/13108/64252/5da51e83E359aa7da/95d397fd59af5ea9.jpg);
+}
+
+.top a {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    display: inline;
+}
+
+.top a:hover {
+    cursor: pointer;
+}
