@@ -15,10 +15,10 @@
 }
 
 .top a {
+    display: block;
     height: 100%;
     width: 100%;
     position: absolute;
-    display: inline;
 }
 
 .top a:hover {
@@ -51,8 +51,12 @@
     line-height: 30px;
     list-style: none;
     float: left;
-    margin: 0 20px;
+    margin: 0 10px;
     font-size: 12px;
+}
+
+.shortcut li .shortcut-register {
+    color: #f20215;
 }
 
 .spacer {
@@ -68,6 +72,11 @@
     color: #999;
     font-size: 12px;
     line-height: 30px;
+}
+
+.shortcut li a:hover {
+    /* color: rgb(256, 21, 28) */
+    color: #f20215;
 }
 
 /* 快捷导航栏结束 */
