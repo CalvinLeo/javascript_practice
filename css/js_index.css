@@ -41,7 +41,6 @@
 /* 顶部通栏结束 */
 
 /* 快捷导航栏开始 */
-
 .shortcut {
     height: 30px;
     background-color: #e3e4e5;
@@ -49,9 +48,19 @@
 }
 
 .shortcut li {
+    line-height: 30px;
     list-style: none;
-    float: right;
+    float: left;
     margin: 0 20px;
+    font-size: 12px;
+}
+
+.spacer {
+    font-style: normal;
+    height: 10px;
+    width: 1px;
+    color: #ccc;
+    margin: 11px 5px 0;
 }
 
 .shortcut li a {
