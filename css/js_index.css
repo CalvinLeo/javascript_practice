@@ -10,6 +10,10 @@
     font-display: block;
   }
 
+body {
+    color: #4d4d4d;
+}
+
 /* 顶部开始 */
 .top {
     height: 80px;
@@ -122,7 +126,50 @@
 .header .search-m {
     position: relative;
     height: 60px;
+    /* overflow: hidden; */
     /* z-index: 1; */
+}
+
+.search-m input {
+    width: 421px;
+    height: 26px;
+    padding: 2px 44px 2px 17px;
+    border: 0;
+    line-height: 26px;
+    outline: none;
+    color: #989898;
+}
+
+.search-m .searchBtn {
+    /* float: right; */
+    position: absolute;
+    width: 58px;
+    height: 32px;
+    right: 0;
+    top: 0;
+    background-color: #e2231a;
+    outline: none;
+    border: 0;
+}
+
+.search-m span {
+    font-family: "icomoon";
+    position: absolute;
+    right: 75px;
+    font-size: 20px;
+    color: #4d4d4d;
+    top: 5px;
+}
+
+.search-m span, .searchBtn:hover {
+    cursor: pointer;
+}
+
+.search-m .searchBtn i {
+    font-family: 'icomoon';
+    font-style: normal;
+    font-size: 25px;
+    color: white;
 }
 
 .header .form {
