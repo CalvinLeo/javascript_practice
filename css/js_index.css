@@ -93,13 +93,26 @@
     color: #f20215;
 }
 
-.dropdown {
-    padding-right: 15px;
-}
-
 .icon-arrow_down {
     font-family: 'icomoon';
     font-style: normal;
 }
-
 /* 快捷导航栏结束 */
+
+/* header开始 */
+.header {
+    background-color: #fff;
+}
+
+.header .w {
+    height: 140px;
+}
+
+.header .logo_scene_img {
+    display: block;
+    width: 134px;
+    height: 120px;
+    background-image: url("https://img1.360buyimg.com/da/jfs/t1/16273/9/11655/153805/5c90a4f3E683206d9/eef283b0ed619fe4.gif?v=0.9212624875344684");
+}
+
+/* keader结束 */
