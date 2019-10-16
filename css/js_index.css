@@ -106,13 +106,59 @@
 
 .header .w {
     height: 140px;
+    position: relative;
 }
 
 .header .logo_scene_img {
+    position: absolute;
     display: block;
     width: 134px;
     height: 120px;
     background-image: url("https://img1.360buyimg.com/da/jfs/t1/16273/9/11655/153805/5c90a4f3E683206d9/eef283b0ed619fe4.gif?v=0.9212624875344684");
+    bottom: 0;
+    left: 0;
+}
+
+.header .search-m {
+    position: relative;
+    height: 60px;
+    /* z-index: 1; */
+}
+
+.header .form {
+    position: absolute;
+    height: 32px;
+    left: 260px;
+    top: 25px;
+    width: 546px;
+    border: 2px solid #e2231a;
+    background-color: #fff;
+}
+
+.header #settleup {
+    position: absolute;
+    top: 25px;
+    right: 230px;
+    height: 32px;
+    z-index: 21;
+}
+
+.header .cw-icon {
+    left: 0;
+    top: 0;
+    width: 130px;
+    height: 34px;
+    border: 1px solid #eee;
+}
+
+.header .promo_lk {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background-image: url("https://img11.360buyimg.com/babel/jfs/t1/51527/4/12973/28693/5d9ee893E89a7c8ff/a4e756f1a7fce70a.png.webp");
+    display: block;
+    width: 190px;
+    height: 120px;
 }
 
 /* keader结束 */
