@@ -1,3 +1,15 @@
+@font-face {
+    font-family: 'icomoon';
+    src:  url('../fonts/icomoon.eot?79nha6');
+    src:  url('../fonts/icomoon.eot?79nha6#iefix') format('embedded-opentype'),
+      url('../fonts/icomoon.ttf?79nha6') format('truetype'),
+      url('../fonts/icomoon.woff?79nha6') format('woff'),
+      url('../fonts/icomoon.svg?79nha6#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
+
 /* 顶部开始 */
 .top {
     height: 80px;
@@ -31,7 +43,9 @@
     position: absolute;
     right: 0;
     top: 8px;
-    background-color: #fff;
+    background-color: rgba(255, 255, 255, 0.2);
+    font-family: "icomoon";
+    font-size: 32px;
 }
 
 .top .top-close:hover {
@@ -77,6 +91,15 @@
 .shortcut li a:hover {
     /* color: rgb(256, 21, 28) */
     color: #f20215;
+}
+
+.dropdown {
+    padding-right: 15px;
+}
+
+.icon-arrow_down {
+    font-family: 'icomoon';
+    font-style: normal;
 }
 
 /* 快捷导航栏结束 */
