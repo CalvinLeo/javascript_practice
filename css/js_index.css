@@ -11,7 +11,9 @@
   }
 
 body {
-    color: #4d4d4d;
+    background-color: rgb(242, 242, 242);
+    /* TEST */
+    height: 1000px;
 }
 
 /* 顶部开始 */
@@ -284,4 +286,135 @@ body {
     height: 120px;
 }
 
-/* keader结束 */
+/* header 结束 */
+
+/* footer 开始 */
+.footer {
+    height: 570px;
+}
+
+.footer .mod_service {
+    height: 103px;
+    border-bottom: 1px solid #dedede;
+    overflow: hidden;
+}
+
+.footer .mod_service_inner {
+    margin: 30px 0;
+    height: 42px;
+}
+
+.mod_service  ul {
+    width: 1190px;
+    height: 42px;
+    margin: 0 auto;
+}
+
+.mod_service_list li {
+    float: left;
+    line-height: 42px;
+    width: 297px;
+    height: 42px;
+    list-style: none;
+}
+
+.footer .mod_service_unit {
+    height: 42px;
+    padding-left: 45px;
+    width: 180px;
+    overflow: hidden;
+}
+
+.mod_service_unit .mod_service_tit {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 36px;
+    height: 42px;
+}
+
+.mod_service_unit .mod_service_txt {
+    overflow: hidden;
+    width: 100%;
+    height: 42px;
+    font-size: 18px;
+    font-weight: 700;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: #444;
+}
+
+/* 多 */
+.mod_service_unit .mod_service_duo {
+    background-image: url("https://misc.360buyimg.com/mtd/pc/index_2019/1.0.0/assets/img/23f3ddf914b1b527d0429a3d713cfe3a.png");
+    background-repeat: no-repeat;
+    background-position: 0 -192px;
+}
+
+/* 快 */
+.mod_service_unit .mod_service_kuai {
+    background-image: url("https://misc.360buyimg.com/mtd/pc/index_2019/1.0.0/assets/img/23f3ddf914b1b527d0429a3d713cfe3a.png");
+    background-repeat: no-repeat;
+    background-position: -41px -192px;
+}
+
+/* 好 */
+.mod_service_unit .mod_service_hao {
+    background-image: url("https://misc.360buyimg.com/mtd/pc/index_2019/1.0.0/assets/img/23f3ddf914b1b527d0429a3d713cfe3a.png");
+    background-repeat: no-repeat;
+    background-position: -82px -192px;
+}
+
+/* 省 */
+.mod_service_unit .mod_service_sheng {
+    background-image: url("https://misc.360buyimg.com/mtd/pc/index_2019/1.0.0/assets/img/23f3ddf914b1b527d0429a3d713cfe3a.png");
+    background-repeat: no-repeat;
+    background-position: -123px -192px;
+}
+
+/* 帮助 */
+.footer .mod_help {
+    padding: 20px 0;
+    overflow: hidden;
+}
+
+.footer .mod_help_inner {
+    margin: 0 auto;
+    width: 1190px;
+}
+
+.footer .mod_help_list {
+    overflow: hidden;
+    /* height: 160px; */
+}
+
+.footer .mod_service_unit {
+    position: relative;
+    width: 180px;
+    margin: 0 auto;
+}
+
+.mod_help_nav li {
+    list-style: none;
+    line-height: 22px;
+}
+
+.mod_help_nav li a {
+    font-family: "Microsoft YaHei", "Heiti SC", tahoma, arial, "Hiragino Sans GB", 宋体, sans-serif;
+    font-size: 12px;
+    text-decoration: none;
+    color: #999;
+}
+
+.mod_help .mod_help_nav {
+    width: 198px;
+    float: left;
+}
+
+.mod_help_nav_tit {
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: #666;
+}
+
+/* footer 结束 */
