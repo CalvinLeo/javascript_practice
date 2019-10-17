@@ -119,7 +119,6 @@ body {
     width: 134px;
     height: 120px;
     background-image: url("https://img1.360buyimg.com/da/jfs/t1/16273/9/11655/153805/5c90a4f3E683206d9/eef283b0ed619fe4.gif?v=0.9212624875344684");
-    bottom: 0;
     left: 0;
 }
 
@@ -181,7 +180,53 @@ body {
     border: 2px solid #e2231a;
     background-color: #fff;
 }
+/* 热词 */
 
+.header .hotwords {
+    position: absolute;
+    height: 20px;
+    width: 550px;
+    left: 260px;
+    font-size: 12px;
+    line-height: 20px;
+    margin-top: 5px;
+}
+
+.hotwords a {
+    text-decoration: none;
+    color: #999;
+    margin: 0 3px;
+}
+
+.hotwords a:hover {
+    color: #e2231a;
+}
+
+/* 导航条 */
+.header .navitems {
+    position: absolute;
+    left: 203px;
+    bottom: 0;
+    width: 758px;
+    height: 60px;
+    border-top: 20px;
+}
+
+.navitems a {
+    float: left;
+    bottom: 0;
+    margin: 20px 10px 0;
+    font-size: 15px;
+    color: #999;
+    line-height: 40px;
+    text-decoration: none;
+}
+
+.navitems a:hover {
+    color: #e2231a;
+}
+
+/* 热推 */
 .header #settleup {
     position: absolute;
     top: 25px;
