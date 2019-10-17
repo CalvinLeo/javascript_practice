@@ -212,6 +212,15 @@ body {
     border-top: 20px;
 }
 
+.navitems ul {
+    float: left;
+}
+
+.navitems li {
+    list-style: none;
+    float: left;
+}
+
 .navitems a {
     float: left;
     bottom: 0;
@@ -236,6 +245,7 @@ body {
     font-size: 12px;
     color: #e2231a;
     line-height: 32px;
+    cursor: pointer;
 }
 
 .cw-icon span {
@@ -254,7 +264,6 @@ body {
     left: 45px;
     height: 32px;
     font-style: normal;
-
 }
 
 #settleup .cw-icon {
