@@ -417,4 +417,39 @@ body {
     color: #666;
 }
 
+.mod_help_cover_tit {
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.mod_help_cover {
+    float: right;
+    text-align: center;
+    margin-right: 0;
+    width: 200px;
+    height: 150px;
+    background-image: url(https://misc.360buyimg.com/mtd/pc/index_2019/1.0.0/assets/img/23f3ddf914b1b527d0429a3d713cfe3a.png);
+}
+
+.mod_help_cover_info {
+    text-align: left;
+    font-size: 12px;
+    font-weight: normal;
+    color: #666;
+    line-height: 22px;
+}
+
+.mod_help_cover_more a {
+    float: right;
+    text-decoration: none;
+    font-size: 12px;
+    color: #666;
+    /* display: block; */
+}
+
+.mod_help_cover_more a:hover {
+    color: #e2231a;
+}
 /* footer 结束 */
