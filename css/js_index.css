@@ -18,6 +18,13 @@ body a:hover {
     color: #e2231a;
 }
 
+body a {
+    font-family: "Microsoft YaHei", "Heiti SC", tahoma, arial, "Hiragino Sans GB", "宋体", "sans-serif";
+    font-size: 12px;
+    text-decoration: none;
+    color: #999;
+}
+
 /* 顶部开始 */
 .top {
     height: 80px;
@@ -407,12 +414,12 @@ body a:hover {
     line-height: 22px;
 }
 
-.mod_help_nav li a {
+/* .mod_help_nav li a {
     font-family: "Microsoft YaHei", "Heiti SC", tahoma, arial, "Hiragino Sans GB", 宋体, sans-serif;
     font-size: 12px;
     text-decoration: none;
     color: #999;
-}
+} */
 
 .mod_help .mod_help_nav {
     width: 198px;
@@ -462,6 +469,13 @@ body a:hover {
 }
 
 /* copyright */
+.mod_copyright_split {
+    color: #ccc;
+    font-size: 12px;
+    margin: 0 10px;
+    text-align: center;
+}
+
 .mod_copyright_inner {
     border-top: 1px solid #e1e1e1;
 }
@@ -480,11 +494,27 @@ body a:hover {
     font-family: "Microsoft YaHei", tahoma, arial, "Hiragino Sans GB", "\\5b8b体", sans-serif;
 }
 
-.mod_copyright_links span {
-    color: #ccc;
-    font-size: 12px;
-    margin: 0 10px;
+.mod_copyright_info {
+    line-height: 22px;
+    margin: 15px auto;
     text-align: center;
+    font-size: 12px;
+    color: #999;
+}
+
+.mod_copyright_info a {
+    color: #999;
+    text-decoration: none;
+}
+
+.mod_business_license {
+    margin-left: 16px;
+}
+
+.mod_copyright_subsites {
+    text-align: center;
+    font-size: 12px;
+    color: #666;
 }
 
 /* footer 结束 */
