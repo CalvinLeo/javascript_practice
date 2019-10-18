@@ -296,12 +296,31 @@ body a {
 }
 /* header 结束 */
 
-/* 内容1开始 */
-.mod_container {
-    height: 500px;
-    background-color: pink;
+/* 内容广告开始 */
+.fs {
+    height: 710px;
+    /* background-color: pink; */
+    background-image: url(https://img30.360buyimg.com/img/jfs/t1/44904/34/13554/130095/5da6ebe0Ef312f3bb/5e4f3aa13c82224f.png.webp);
+    background-repeat: no-repeat;
+    background-position: top center;
+    z-index: 1;
+    position: relative;
 }
-/* 内容1结束 */
+
+.fs .mod-content {
+    background-color: skyblue;
+    height: 480px;
+    top: 0;
+    margin-left: 50%;
+    left: -595px;
+    position: absolute;
+}
+
+.fs a {
+    height: 710px;
+    display: block;
+}
+/* 内容广告结束 */
 
 /* footer 开始 */
 .footer {
@@ -413,13 +432,6 @@ body a {
     list-style: none;
     line-height: 22px;
 }
-
-/* .mod_help_nav li a {
-    font-family: "Microsoft YaHei", "Heiti SC", tahoma, arial, "Hiragino Sans GB", 宋体, sans-serif;
-    font-size: 12px;
-    text-decoration: none;
-    color: #999;
-} */
 
 .mod_help .mod_help_nav {
     width: 198px;
