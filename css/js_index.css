@@ -320,6 +320,58 @@ body a {
     height: 710px;
     display: block;
 }
+
+.fs_col1 {
+    float: left;
+    width: 190px;
+    height: 480px;
+    margin-right: 10px;
+}
+
+/* .fs_col1_content {
+    top: 10px;
+} */
+
+.fs_col1_cate_menu {
+    color: #666;
+    margin-top: 10px;
+    padding: 10px 0;
+    overflow: hidden;
+    background-color: #fff;
+}
+
+.fs_col1_cate_menu li {
+    float: left;
+    height: 25px;
+    width: 175px;
+    padding-left: 18px;
+    line-height: 25px;
+}
+
+.fs_col1_cate_menu li a {
+    font-size: 14px;
+    float: left;
+    color: #333;
+    font-family: "Microsoft YaHei", tahoma, arial, "Hiragino Sans GB", "\\5b8b体", sans-serif;
+}
+
+.fs_col1_cate_menu li a:hover {
+    color: #e2231a;
+}
+
+.fs_col1_cate_menu li span {
+    float: left;
+}
+
+.cate_menu_line {
+    color: #636363;
+    font-size: 12px;
+}
+
+.fs_col1_cate_menu li:hover {
+    background-color: #ccc;
+}
+
 /* 内容广告结束 */
 
 /* footer 开始 */
