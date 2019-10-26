@@ -1,0 +1,31 @@
+.header,div {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #f3f5f7;
+}
+
+header {
+    /* position: relative; */
+    height: 100px;
+    width: 1190px;
+    margin: 0 auto;
+    background-color: pink;
+    padding-top: 30px;
+}
+
+.logo {
+    width: 195px;
+    height: 42px;
+    background-color: purple;
+}
+
+.logo a {
+    display: block;
+    width: 195px;
+    height: 42px;
+    text-indent: -999px; 
+    overflow: hidden;  /* 设置了文字缩进后，如果不加这句代码会在网页缩小的时候出现，所以加上overflow hidden 可以保证 */
+}

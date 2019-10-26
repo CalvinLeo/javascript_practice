@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box; /* css3 新属性 设置了边距不会影响盒子的宽高 */
 }
 
 /* 版心 */
@@ -15,4 +16,12 @@
 
 .fr {
     float: right;
+}
+
+.clearfix:after {
+    content: ""; 
+    display: block; 
+    height: 0;
+    clear: both;
+    visibility: hidden;
 }
