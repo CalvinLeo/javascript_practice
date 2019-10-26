@@ -18,6 +18,10 @@
     float: right;
 }
 
+li {
+    list-style: none;
+}
+
 .clearfix:after {
     content: ""; 
     display: block; 
