@@ -165,3 +165,13 @@ a:hover {
 * 如果float元素没有设置好宽高，会导致兄弟元素展示不下，采取下移动的方式展示
 
 解决：比较常见的问题是 父视图高度随着 子视图的浮动而改变，所以清除浮动可以解决这个高度问题。1、父视图 overflow: hidden 2、父视图浮动 3、所有浮动视图下方设置 clear:both 4、clearfix.
+
+#### 过渡
+
+> transition 要过渡的属性 花费时间 运动曲线 开始时间； 如果有多组属性变化，用逗号隔开
+
+transition 简写属性，用于在一个属性中设置四个过渡属性
+transition-property 规定应用过渡的 CSS 属性的名称
+transition-duration 定义过渡效果花费的时间 默认是0
+transition-timing-function 规定过渡效果的曲线，默认是"ease"
+transition-delay 规定过渡效果何时开始 默认是0
