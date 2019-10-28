@@ -175,3 +175,11 @@ transition-property 规定应用过渡的 CSS 属性的名称
 transition-duration 定义过渡效果花费的时间 默认是0
 transition-timing-function 规定过渡效果的曲线，默认是"ease"
 transition-delay 规定过渡效果何时开始 默认是0
+
+#### 移动与缩放
+
+> transform 变形
+
+transform translate 2D 模型的平移
+transform scale（1， 1） 水平缩放1倍，竖直缩放1倍
+transform rotate(45deg); 旋转45度
