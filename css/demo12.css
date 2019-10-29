@@ -252,3 +252,59 @@ header .search {
 .recommend-body li:nth-child(5n) {
     margin-right: 0;
 }
+
+.footer {
+    height: 420px;
+    background-color: white;
+    margin-top: 30px;
+    padding-top: 30px;
+}
+
+.foot-inner {
+    background-color: pink;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.foot-inner .foot-left {
+    position: relative;
+    width: 230px;
+    height: 180px;
+    margin-top: 15px;
+    margin-left: 15px;
+    background-color: green;
+    float: left;
+}
+
+.foot-left button {
+    position: absolute;
+    border: 1px solid skyblue;
+    height: 35px;
+    width: 120px;
+    left: 50%;
+    bottom: 15px;
+    padding: 0 15px;
+    transform: translate(-50%, 0);
+}
+
+.foot-right {
+    float: right;
+    margin-top: 10px;
+    margin-right: 30px;
+    right: 20px;
+    height: 180px;
+}
+
+.foot-right dl {
+    float: right;
+    margin-left: 50px;
+}
+
+.foot-right dt {
+    line-height: 40px;
+}
+
+.foot-right dd {
+    line-height: 24px;
+}
