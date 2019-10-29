@@ -192,3 +192,63 @@ header .search {
     transform: translate(0, -50%);
     background-color: #fff;
 }
+
+/* 精品推荐 */
+.recommend {
+    margin-top: 10px;
+    /* border-bottom: 1px solid #999; */
+    height: 60px;
+    line-height: 60px;
+    background-color: white;
+    box-shadow: 0 1px 2px #999;
+}
+
+.rec-1 {
+    position: relative;
+    padding-left: 30px;
+    color: #333333;
+    font-size: 13px;
+}
+
+.rec-1 a {
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 16px;
+    width: 40px;
+    height: 60px;
+    color: #333333;
+}
+
+.rec-1 a:hover {
+    background-color: #fff;
+}
+
+.rec-1 em {
+    font-style: normal;
+    position: absolute;
+    right: 30px;
+}
+
+.recommend-body {
+    margin-top: 20px;
+    background-color: pink;
+}
+
+.recommend-body li {
+    float: left;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    width: 226px;
+    height: 300px;
+    background-color: #fff;
+    transform: all 0.3s;
+}
+
+.recommend-body li:hover {
+    transform: translateY(-5px);
+    box-shadow: 2px 2px 2px #ccc;
+}
+
+.recommend-body li:nth-child(5n) {
+    margin-right: 0;
+}
