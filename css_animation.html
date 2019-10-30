@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .animation {
+            margin: 0;
+            padding: 0;
+            position: absolute;
+            left: 0;
+            width: 100px;
+            height: 100px;
+            background-color: pink;
+            /*  animation: name duration timing-function delay iteration-count direction fill-mode; */
+            /* 声明动画名称 运行动画时间 动画方式， delay延迟时间 iteration-count循环次数，diretion是运动方向， fill-mode */
+            animation: move 3s ease-in-out 0s infinite alternate;
+        }
+
+        @keyframes move {
+            from {
+                left: 0;
+                background-color: pink;
+            }
+            to {
+                left: 100%;
+                right: 0;
+                background-color: yellow;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="animation"></div>
+</body>
+</html>
