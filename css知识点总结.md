@@ -183,3 +183,16 @@ transition-delay 规定过渡效果何时开始 默认是0
 transform translate 2D 模型的平移
 transform scale（1， 1） 水平缩放1倍，竖直缩放1倍
 transform rotate(45deg); 旋转45度
+
+##### 背景图的缩放
+
+background-size: 缩放模式，cover 等比例缩放， contain 自动缩放比例，宽或者高到了就停止。
+
+#### 浏览器前缀
+
+```
+-webkit- chrome
+-moz- hotfox
+-ms- IE
+-o- Opera
+```
