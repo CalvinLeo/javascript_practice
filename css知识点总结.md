@@ -188,6 +188,10 @@ transform rotate(45deg); 旋转45度
 
 background-size: 缩放模式，cover 等比例缩放， contain 自动缩放比例，宽或者高到了就停止。
 
+##### 颜色渐变
+
+background: liner-gradient(top, red 0%, green 50%, blue 100%) 渐变色 属性用逗号分隔，第一个参数是起始位置， 颜色与百分比占比中间用空格隔开。
+
 #### 浏览器前缀
 
 ```
