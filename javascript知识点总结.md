@@ -1,6 +1,6 @@
 #### javaScript 知识点汇总
 
-script标签注意点：
+##### script标签注意点：
 
 * 在一对script的标签中有错误的js代码，那么该错误的代码后面的js代码不会执行
 * 如果第一对的script标签中有错误，不会影响后面的script标签中的js代码执行
@@ -9,3 +9,11 @@ script标签注意点：
 * 有可能出现这种情况：script标签中可能同时出现type 和 Language 的写法
 * script 标签在页面中可以出现多对
 * script 标签一般是在body的标签的最后的，有的时候会在head标签中，建议body的最后
+
+##### 类型相关
+
+* 基础数据类型有Number、String、Boolean、object、function
+* 对象类型有 Object、Date、Array
+* 2个不包含任何值的数据类型 null、undefined
+* 可以使用 **typeof** 操作符来查看 JavaScript 变量的数据类型
+* **constructor** 属性返回所有 JavaScript 变量的构造函数
