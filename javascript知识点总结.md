@@ -17,3 +17,35 @@
 * 2个不包含任何值的数据类型 null、undefined
 * 可以使用 **typeof** 操作符来查看 JavaScript 变量的数据类型
 * **constructor** 属性返回所有 JavaScript 变量的构造函数
+
+*类型转换*
+
+1、其他类型转数字类型有三种方式：
+
+1. parseInt(); // 转整数
+    * parseInt(10) = 10;
+    * parseInt(10sdfaf) = 10;
+    * parseInt(g10) = NaN
+
+2. parseFloat(); // 转小数
+    * parseFloat(10) = 10
+    * parseFloat(10sdfaf) = 10;
+    * parseFloat(g10) = NaN;
+    * parseFloat(10.98) = 10.98;
+
+3. Number(); // 转数字
+    * Number(10) = 10
+    * Number(10sdfaf) = NaN;
+    * Number(g10) = NaN;
+    * Number(10.98) = 10.98;
+
+想要转整数 parseInt(), 想要转小数 parseFloat(), 想要转数字 Number().
+
+2、转String类型的相关操作
+
+1. .toString(); // 如果变量有意义使用 toString()
+2. String();    // 如果变量没有意义使用 String() 更安全
+
+3、其他类型转 boolean 类型
+
+1. boolean();
