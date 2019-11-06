@@ -1,6 +1,8 @@
-#### javaScript 知识点汇总
+# javaScript知识点汇总
 
-##### script标签注意点：
+> JavaScript 是一门脚本语言、解释型语言、动态类型语言、基于对象的语言、弱类型语言
+
+## script标签注意点
 
 * 在一对script的标签中有错误的js代码，那么该错误的代码后面的js代码不会执行
 * 如果第一对的script标签中有错误，不会影响后面的script标签中的js代码执行
@@ -10,7 +12,7 @@
 * script 标签在页面中可以出现多对
 * script 标签一般是在body的标签的最后的，有的时候会在head标签中，建议body的最后
 
-##### 类型相关
+## 类型相关
 
 * 基础数据类型有Number、String、Boolean、object、function
 * 对象类型有 Object、Date、Array
