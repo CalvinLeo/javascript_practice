@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // length 长度，数组的长度
+        
+        // indexOf 来搜索一个指定的元素的位置
+        var arr = [10, 20, '30', 'xyz'];
+        var test0 = arr.indexOf(10);
+        var test1 = arr.indexOf(20);
+        var test2 = arr.indexOf('30');
+        console.log(test0, test1, test2);
+
+        // slice 截取数组操作
+        var arr1 = ['A', 'B', 'C', 'D', 'E', 'F', 'G'];
+        var newArr = arr1.slice(2);
+        var newArr1 = arr1.slice(1,2);
+        var acopy = arr1.slice();
+        console.log('从第二个元素截取到结束' + newArr + '----从第一个位置截取到第二个位置的数组为：'+ newArr1 + '-----数组的copy：' + acopy);
+
+        // concat 拼接数组
+        // concat函数 会返回一个新的数组，所以需要对原来数组进行重新赋值或者 新数组接收
+        var array = ['a', 'b', 'c'];
+        array = array.concat(1, 2, ['d', 'e']); 
+        console.log(array);
+
+        // 数组根据拼接成字符串操作 join
+        var array1 = ['a', 'b', 'c'];
+        var string = array1.join(',');
+        console.log('拼接的字符串为：', string);
+        var string2 = array1.join('-');
+        console.log('拼接的字符串2为：', string2);
+    </script>
+</body>
+</html>

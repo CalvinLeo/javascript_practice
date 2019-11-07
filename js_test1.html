@@ -11,7 +11,7 @@
 
     </table>
     <script>
-        document.write("<table border='1' cellpadding='0' cellspacing='0'>");
+        document.write("<table border='0' cellpadding='10' cellspacing='0'>");
         for(var i = 1; i < 10; i++) {
             document.write("<tr>");
             for(var j = 1; j <= i; j++) {
@@ -22,6 +22,19 @@
             document.write("</tr>");
         }
         document.write("</table>");
+
+        var arr = [10, 20, 15, 6, 30, 11];
+        console.log("排序前%@", arr);
+        for (var i = 0; i < arr.length - 1; i++) {
+            for (var j = 0; j < arr.length - 1 - i; j++) {
+                if (arr[j] < arr[j+1]) {
+                    var temp = arr[j];
+                    arr[j] = arr[j+1];
+                    arr[j+1] = temp;
+                }
+            }
+        }
+        console.log("排序后%@", arr);
     </script>
 </body>
 </html>
