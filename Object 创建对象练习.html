@@ -1,0 +1,46 @@
+<!--
+ * @Description: In User Settings Edit
+ * @Author: your name
+ * @Date: 2019-11-09 11:41:54
+ * @LastEditTime: 2019-11-09 13:14:30
+ * @LastEditors: Please set LastEditors
+ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 自定义构造函数的方法
+        function Person() {
+            this.name = "Calvin";
+            this.age = 27;
+            this.phone = "13000009999";
+        }
+
+        var obj = new Person();
+        obj.name = "hahaha";
+        console.log(obj);
+
+        // 带参数的构造函数
+        function Personha(name, age, phone) {
+            this.name = name;
+            this.age = age;
+            this.phone = phone;
+        }
+        var obj2 = new Personha("liu", 18, "13333334444");
+        console.log(obj2);
+
+        // 字面值创建对象
+        var obj3 = {"name": "calvin",
+                    "age": 20,
+                    "phone": "13200001111",
+                    };
+        console.log(obj3);
+    </script>
+</body>
+</html>
