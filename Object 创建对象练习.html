@@ -1,8 +1,8 @@
 <!--
- * @Description: In User Settings Edit
+ * @Description: 对象：有属性和方法，特指的某个事物 一组无序属性的集合
  * @Author: your name
  * @Date: 2019-11-09 11:41:54
- * @LastEditTime: 2019-11-09 13:14:30
+ * @LastEditTime: 2019-11-09 17:57:04
  * @LastEditors: Please set LastEditors
  -->
 <!DOCTYPE html>
@@ -41,6 +41,24 @@
                     "phone": "13200001111",
                     };
         console.log(obj3);
+
+        // json 格式的数据：一般都是成对的，是键值对
+        // json 也是对象，数据都是成对的一般json的键值对都是用双引号括起来
+        var json = {
+            "name": "xiaoming",
+            "age":"10",
+            "sex":"man",
+        }
+
+        // 遍历对象是不能通过for循环的
+        // 但是可以通过for in 来遍历，不过是无序的
+        // 获取属性的值得时候尽量用 【】因为如果用点语法，在没有判断的时候会因为JavaScript的特性去声明这个属性
+        for (var key in json) { 
+           if (json.hasOwnProperty(key)) {
+                console.log("key值是：" + json[key]);        
+            }
+        }
+
     </script>
 </body>
 </html>
