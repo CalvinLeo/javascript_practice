@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 创建对象有三种方式 -->
+    <!-- 1.系统构造方法 new 一个对象 -->
+    <!-- 2.自定义构造方法 创造一个对象 -->
+    <!-- 3.字面值创造一个对象 -->
+
+    <script>
+        var people = new Object();
+        people.name = "Calvin";
+        people.age = 18;
+        people.sex = "man";
+        people.cook = function() {
+            console.log("我是一个cook的方法");
+        };
+
+        // 方法的调用
+        people.cook();
+        console.log(people);
+    </script>
+</body>
+</html>
