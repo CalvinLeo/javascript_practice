@@ -124,6 +124,13 @@
             }
         });
         console.log(sortArr);
+
+        // 如果是一个对象 && true, 那么结果是true
+        // 如果是一个true && 对象，那么结果是对象
+        var flag = new Boolean(false);
+        var result = true && flag;
+        console.log(result);
+        
     </script>
 </body>
 
