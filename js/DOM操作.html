@@ -1,3 +1,10 @@
+<!--
+ * @Description: In User Settings Edit
+ * @Author: your name
+ * @Date: 2019-11-12 22:46:10
+ * @LastEditTime: 2019-11-12 23:10:11
+ * @LastEditors: Please set LastEditors
+ -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,7 +16,8 @@
 <body>
     <input type="button" value="显示效果" id="btn">
     <input type="button" value="分离HTML和JS" id="separation">
-    
+    <input type="button" value="点我" id="p-click">
+    <p id="p1">这是一个p</p>
     <script>
         // DOM: Document Object Model 文档对象模型 --- 操作页面的元素
         document.getElementById("btn").onclick = function() {
@@ -22,6 +30,15 @@
 
         var separation = document.getElementById("separation");
         separation.onclick = clickDepart;
+
+        // 根据id获取按钮，给按钮加click方法，添加事件函数
+        document.getElementById("p-click").onclick = function () {
+            document.getElementById("p1").innerText="我是一个p标签，我可以被改变";
+        };
+
+        // 凡是所有成对的标签，中间的文本内容都可以用 innerText 来处理
+
+        // document.getElementsByTagName("") 这个方法里面存的是标签名，是一个伪数组
     </script>
 </body>
 </html>
