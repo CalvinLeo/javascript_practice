@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // length 长度，数组的长度
+
+        // indexOf 来搜索一个指定的元素的位置
+        var arr = [10, 20, '30', 'xyz'];
+        var test0 = arr.indexOf(10);
+        var test1 = arr.indexOf(20);
+        var test2 = arr.indexOf('30');
+        console.log(test0, test1, test2);
+
+        // push and pop 是数组的添加和删除操作
+        arr.push('a', 'b', 'c');
+        console.log(arr);
+        arr.pop();
+        arr.pop();
+        console.log(arr);
+
+        // slice 截取数组操作, 一个参数是起始位置，
+        var arr1 = ['A', 'B', 'C', 'D', 'E', 'F', 'G'];
+        var newArr = arr1.slice(2);
+        var newArr1 = arr1.slice(1, 2);
+        var acopy = arr1.slice();
+        console.log('从第二个元素截取到结束' + newArr + '----从第一个位置截取到第二个位置的数组为：' + newArr1 + '-----数组的copy：' + acopy);
+
+        // concat 拼接数组
+        // concat函数 会返回一个新的数组，所以需要对原来数组进行重新赋值或者 新数组接收
+        var array = ['a', 'b', 'c'];
+        array = array.concat(1, 2, ['d', 'e']);
+        console.log(array);
+
+        // 数组根据拼接成字符串操作 join
+        var array1 = ['a', 'b', 'c'];
+        var string = array1.join(',');
+        console.log('拼接的字符串为：', string);
+        var string2 = array1.join('-');
+        console.log('拼接的字符串2为：', string2);
+
+        // 反转数组
+        array1.reverse();
+        console.log(array1);
+
+        // for in 和 for of 的区别 for in 的
+        for (let value in array1) {
+            console.log(value);
+        }
+
+        for (let value of array1) {
+            console.log(value);
+        }
+        // console.log("aaaaaaa" + value);
+
+        // 判断是否是array
+        // Array.isArray(对象) 判断这个对象是不是数组
+        // instanceOf
+        Array.isArray(arr);
+
+        // 
+        // Array.from();
+
+        // every() 数组中每一个元素都调用这个函数
+        // var arrEvery = ["a", "b", "c"];
+        // var flag = arrEvery.every(function(ele, index) {
+        //     console.log(typeof ele);
+        //     return (typeof ele === "string");           // 判断 元素是不是都是字符串
+        // });
+        // console.log("筛选得到的结果是" + flag);
+
+        // filter() 数组中每个元素调用这个方法 满足条件返回一个新数组
+        var array = [10, 20, 30, 40, 50];
+        var newArray = array.filter(function (ele, index) {
+            return ele >= 30;
+        });
+        console.log("符合条件的数据是----" + newArray);
+
+        // 数组遍历 forEach()
+        array.forEach(function (ele, index) {
+            console.log(ele + "--------" + index);
+        });
+
+        let arr2 = [1, 2, 3, 4, 5];
+        let newArr2 = arr2.filter(function (item) {
+            return item * 2;
+        });
+        let newArr3 = arr2.map(function(item) {
+            return item * 2;
+        });
+        console.log(newArr2);
+        console.log(newArr3);
+
+        var sortArr = [1, 40, 30, 10, 100];
+        sortArr.sort(function(a, b) {
+            if (a > b) {
+                return 1;
+            }
+            else if (a == b) {
+                return 0;
+            }
+            else {
+                return -1;
+            }
+        });
+        console.log(sortArr);
+
+        sortArr.sort(function(a, b) {
+            if (a < b) {
+                return 1;
+            }
+            else if (a == b) {
+                return 0;
+            }
+            else {
+                return -1;
+            }
+        });
+        console.log(sortArr);
+
+        // 如果是一个对象 && true, 那么结果是true
+        // 如果是一个true && 对象，那么结果是对象
+        var flag = new Boolean(false);
+        var result = true && flag;
+        console.log(result);
+        
+    </script>
+</body>
+
+</html>
