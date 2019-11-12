@@ -29,7 +29,25 @@
             console.log("这是foo函数 x值为：" + x + "y的值为：" + y + "z的值为：" + z);
         }
         foo();
-        console.log("这是foo外部的log方法 x的值：" + x + "y的值为：" + y + "z的值为：" + z);
+        // console.log("这是foo外部的log方法 x的值：" + x + "y的值为：" + y + "z的值为：" + z);
+
+        // 自定义方法
+        function MyMath() {
+            this.getMax = function() {
+                // 所有数字中的最大值
+                var max = arguments[0];
+                for (let index = 0; index < arguments.length; index++)  {
+                    const element = arguments[index];
+                    if (max < element) {
+                        max = element;
+                    }                     
+                }
+                return max;
+            }
+        }
+        var mt = new MyMath();
+        var result = mt.getMax(1, 20, 2, 3, 50, 55);
+        console.log(result);
     </script>
 </body>
 </html>
