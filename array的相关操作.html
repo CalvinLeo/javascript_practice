@@ -56,10 +56,24 @@
         for (let value of array1) {
             console.log(value);
         }
-        console.log("aaaaaaa" + value);
+        // console.log("aaaaaaa" + value);
 
         // 判断是否是array
+        // Array.isArray(对象) 判断这个对象是不是数组
+        // instanceOf
         Array.isArray(arr);
+
+        // 
+        // Array.from();
+
+        // every() 数组中每一个元素都调用这个函数
+        var arrEvery = ["a", "b", "c"];
+        var flag = arrEvery.every(function(ele, index) {
+            console.log(typeof ele);
+            return (typeof ele === "string");           // 判断 元素是不是都是字符串
+        });
+        console.log("筛选得到的结果是" + flag);
+
 
     </script>
 </body>
