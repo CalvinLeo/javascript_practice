@@ -1,3 +1,10 @@
+<!--
+ * @Description: In User Settings Edit
+ * @Author: your name
+ * @Date: 2019-11-11 21:17:17
+ * @LastEditTime: 2019-11-11 21:17:17
+ * @LastEditors: your name
+ -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,6 +12,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <script src="common.js"></script>
 </head>
 <body>
     <script>
@@ -30,6 +38,13 @@
         }
         foo();
         console.log("这是foo外部的log方法 x的值：" + x + "y的值为：" + y + "z的值为：" + z);
+    </script>
+
+    <script>
+        // 获取时间
+        var date = new Date();
+        var dt = getDate(date);
+        console.log(dt);
     </script>
 </body>
 </html>
