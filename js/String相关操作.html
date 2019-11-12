@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
 </head>
+
 <body>
     <script>
         // JS中的
@@ -42,9 +44,54 @@
         // alice 截取
 
         // split 根据某个字符串进行分割，已数组的形式返回
-        var str = "a b c d e f";
-        var arr = str.split(" ");
-        console.log("拼接出来的数组是" + arr);
+        // var str = "a b c d e f";
+        // var arr = str.split(" ");
+        // console.log("拼接出来的数组是" + arr);
+
+        // toLocaleLowerCase() 转小写、转大写
+        // var str = "Hello";
+        // str = str.toLocaleLowerCase(); //小写
+        // str = str.toLowerCase(); // 转小写
+        // console.log(str);
+
+        // str = str.toLocaleUpperCase(); // 转大写
+        // str = str.toUpperCase(); // 转大写
+        // console.log(str);
+
+        // 字符串相关操作 
+        // 查找字符串中某个 key 值的位置
+        // var str = "hello wod odd ott fbo nhyo";
+        // var searchStr = "o";
+        // var index = 0;
+        // while ((index = str.indexOf(searchStr, index)) != -1) {
+        //     console.log("搜索到的字符串是：" + index);
+        //     index += searchStr.length;
+        // }
+
+        // 查找字符串中每个字母出现了多少次
+        var str = "hello world";
+        str = str.toLowerCase(); // step1 转换小写
+        var obj = {};
+
+        // 遍历字符串
+        for (let index = 0; index < str.length; index++) {
+            const element = str[index];
+            // 如果对象中有这个key 就 value++， 没有就赋值这个 key 为 1 
+            if (obj[element]) {
+                obj[element]++;
+            }
+            else {
+                obj[element] = 1;
+            }
+        }
+
+        for (const key in obj) {
+            if (obj.hasOwnProperty(key)) {
+                console.log(key + "这个字符出现了" + obj[key] + "次");
+            }
+        }
+
     </script>
 </body>
+
 </html>
