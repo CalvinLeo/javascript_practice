@@ -15,3 +15,7 @@ function getDate(dt) {
     var second = dt.getSeconds() < 10 ? "0" + dt.getSeconds() : dt.getSeconds();
     return year + "年" + month + "月" + day + "日" + hour + ":" + minute + ":" + second;
 }
+
+function my$(id) {
+    return document.getElementById(id);
+}
