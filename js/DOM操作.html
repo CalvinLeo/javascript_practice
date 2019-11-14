@@ -2,9 +2,16 @@
  * @Description: In User Settings Edit
  * @Author: your name
  * @Date: 2019-11-12 22:46:10
- * @LastEditTime: 2019-11-12 23:10:11
+ * @LastEditTime: 2019-11-14 22:58:06
  * @LastEditors: Please set LastEditors
  -->
+
+ <!-- getElementById("Id的名字") 根据id属性的值获取元素，返回来的是一个元素对象 -->
+ <!-- getElementsByTagName("标签的名字") 根据标签名字获取元素，返回来的是一个伪数组，里面保存了多个相同的DOM对象 -->
+ <!-- getElementsByName("name属性的名") 根据name属性的值获取元素，返回来的是一个伪数组，里面保存了多个DOM -->
+ <!-- genElementsByClassName（"类名"） 根据类样式的名字来获取元素，返回来的是一个伪数组 -->
+ <!-- querySelector("选择器的名字") -->
+ <!-- querySelectorAll("选择器的名字") -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -16,6 +23,11 @@
         input {
             display: inline-block;
             padding: 0 30px;
+        }
+        
+        #uu li {
+            list-style-type: none;
+            cursor: pointer; 
         }
     </style>
 </head>
@@ -45,7 +57,20 @@
         <option value="4" id="op4">黄瓜</option>
         <option value="5" id="op5">香蕉</option>
     </select>
- 
+
+    <br />
+    <br />
+    <br />
+
+    <ul id="uu">
+        <li>雪花</li>
+        <li>勇闯天涯</li>
+        <li>汉斯</li>
+        <li>青岛</li>
+        <li>大乌苏</li>
+        <li>百威</li>
+    </ul>
+    
 
     <script src="common.js"></script>
     <script>
@@ -93,6 +118,19 @@
             my$("op4").selected = true;
         };
 
+        var lis = my$("uu").getElementsByTagName("li");
+        for (let i = 0; i < lis.length; i++) {
+            console.log("aa");
+            const element = lis[i];
+            element.onmouseover = function() {
+                this.style.backgroundColor = "yellow";
+            };
+            element.onmouseout = function () {
+                this.style.backgroundColor = "";
+            };
+
+            
+        }
     </script>
 </body>
 </html>
