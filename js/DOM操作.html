@@ -103,9 +103,35 @@
             element.onmouseout = function () {
                 this.style.backgroundColor = "";
             };
-
-            
         }
+
+        // 节点的属性 （可以使用标签---元素.出来，可以使用属性节点.出来，文本节点.点出来）
+        // nodeType: 节点的类型：1----标签， 2----属性， 3----文本
+        // nodeName: 节点的名字：标签节点---大写的标签名字，属性节点---小写的属性名字，文本节点---#text
+        // nodeValue: 节点的值：标签节点---null，属性节点---属性值，文本节点---文本内容
+
+        // 12行代码，都是获取节点和元素
+        var uuObj = document.getElementById("uu");
+        // 子节点
+        console.log(uuObj.childNodes);
+        // 子元素
+        console.log(uuObj.children);
+        // 第一个子节点
+        console.log(uuObj.firstChild);
+        // 第一个子元素
+        console.log(uuObj.firstElementChild);
+        // 最后一个子节点
+        console.log(uuObj.lastChild);
+        // 最后一个子元素
+        console.log(uuObj.lastElementChild);
+        // 某个元素的前一个兄弟节点
+        console.log(uuObj.previousSibling);
+        // 某个元素的前一个兄弟元素
+        console.log(uuObj.previousElementSibling);
+        // 某个元素的后一个兄弟节点
+        console.log(uuObj.nextSibling);
+        // 某个元素的后一个兄弟元素
+        console.log(uuObj.nextElementSibling);
     </script>
 </body>
 </html>
