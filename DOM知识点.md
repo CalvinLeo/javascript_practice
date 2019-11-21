@@ -1,3 +1,10 @@
+<!--
+ * @Description: In User Settings Edit
+ * @Author: your name
+ * @Date: 2019-11-21 22:06:00
+ * @LastEditTime: 2019-11-21 22:25:09
+ * @LastEditors: Please set LastEditors
+ -->
 
 # DOM知识点
 
@@ -20,9 +27,29 @@ nodeName: 标签节点---大写的标签名字，属性节点---小写的属性�
 nodeValue: 标签---null，属性---属性的值，文本---文本内容
 
 获取节点
-
-获取当前节点的父级节点
-
-获取当前节点的父级元素
-
-获取当前节点的子级节点
+```
+// 获取当前节点的父级节点
+getElementById("id").parentNode;
+// 获取当前节点的父级元素
+getElementById("id").parentElement;
+// 获取当前节点的子级节点
+getElementById("id").childNode;
+// 获取当前节点的子级元素
+getElementById("id").children;
+// 获取当前节点的第一个子级节点
+getElementById("id").firstChild;
+// 获取当前节点的第一个子级元素
+getElementById("id").firstElementChild;
+// 获取当前节点的最后一个子级节点
+getElementById("id").lastChild;
+// 获取当前节点的最后一个子级元素
+getElementById("id").lastElementChild;
+// 获取当前节点的前一个兄弟节点
+getElementById("id").previousSibling;
+// 获取当前节点的前一个兄弟元素
+getElementById("id").previousElementSibling;
+// 获取当前节点的后一个兄弟节点
+getElementById("id").nextSibling;
+// 获取当前节点的后一个兄弟元素
+getElementById("id").nextElementSibling;
+```
