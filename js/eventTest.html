@@ -12,7 +12,7 @@
     attachEvent 中的事件类型（事件的名字）有on
  * @Author: your name
  * @Date: 2019-11-23 07:35:22
- * @LastEditTime: 2019-11-23 08:13:29
+ * @LastEditTime: 2019-11-23 09:39:06
  * @LastEditors: Please set LastEditors
  -->
 <!DOCTYPE html>
@@ -22,17 +22,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <style>
+        #dv1 {
+            background-color:red;
+            width: 300px;
+            height: 300px;
+        }
+
+        #dv2 {
+            background-color: green;
+            width: 200px;
+            height: 200px;
+        }
+
+        #dv3 {
+            background-color: blue;
+            width: 100px;
+            height: 100px;
+        }
+    </style>
 </head>
 <body>
-    <input type="button" value="按钮" id="btn">
+    <!-- <input type="button" value="按钮" id="btn">
 
     <script src="common.js"></script>
     <script>
         my$("btn").addEventListener("click", function(){
             alert("点我干啥");
         },false);
-    </script>
+    </script> -->
 
+    <div id="dv1">
+        <div id="dv2">
+            <div id="dv3"></div>
+        </div>
+    </div>
+    <script src="common.js"></script>
+    <script>
+        var objs = [my$("dv1"), my$("dv2"), my$("dv3")];
+        objs.forEach(function(ele) {
+            console.log(arguments.length);
+            ele.addEventListener("click", function() {
+                console.log(this.id);
+            }, false);
+        });
+    </script>
     <!-- 解绑事件 -->
 </body>
 </html>
