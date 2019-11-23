@@ -1,0 +1,38 @@
+<!--
+ * @Description: 
+ * addEventListener() 与 attachEvent() 相同点：都可以为元素绑定事件
+ * 不同点:
+ 1. 方法名不一样
+ 2. 参数个数不同 addEventListener 三个参数，attachEvent两个参数
+ 3. addEventListener 谷歌，火狐，IE11支持，IE8不支持
+    attachEvent 谷歌火狐不支持，IE11不支持，IE8支持
+ 4. this 不同，addEventListener 中的 this 是当前绑定事件的对象 
+    attachEvent中的 this 是window
+ 5. addEventListener 中事件的类型（事件的名字）没有on 
+    attachEvent 中的事件类型（事件的名字）有on
+ * @Author: your name
+ * @Date: 2019-11-23 07:35:22
+ * @LastEditTime: 2019-11-23 08:13:29
+ * @LastEditors: Please set LastEditors
+ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <input type="button" value="按钮" id="btn">
+
+    <script src="common.js"></script>
+    <script>
+        my$("btn").addEventListener("click", function(){
+            alert("点我干啥");
+        },false);
+    </script>
+
+    <!-- 解绑事件 -->
+</body>
+</html>

@@ -26,7 +26,7 @@ nodeType: 节点的类型，1---标签节点，2---属性节点，3---文本节�
 nodeName: 标签节点---大写的标签名字，属性节点---小写的属性名字，文本节点
 nodeValue: 标签---null，属性---属性的值，文本---文本内容
 
-获取节点
+##### 获取节点
 ```
 // 获取当前节点的父级节点
 getElementById("id").parentNode;
@@ -53,3 +53,11 @@ getElementById("id").nextSibling;
 // 获取当前节点的后一个兄弟元素
 getElementById("id").nextElementSibling;
 ```
+
+##### 元素的创建
+
+三种元素创建的方式
+
+1. document.write("标签代码及内容");
+2. 父级对象.innerHTML = "标签代码及内容";
+3. document.createElement("标签名字")
