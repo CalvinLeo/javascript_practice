@@ -2,7 +2,7 @@
  * @Description: In User Settings Edit
  * @Author: your name
  * @Date: 2019-11-12 22:46:10
- * @LastEditTime: 2019-11-12 23:10:11
+ * @LastEditTime: 2019-11-23 17:03:22
  * @LastEditors: Please set LastEditors
  -->
 <!DOCTYPE html>
@@ -12,9 +12,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    
+    <!-- <style>
+        input {
+            display: inline-block;
+            padding: 0 30px;
+        }
+    </style> -->
 </head>
 <body>
+    <!-- 
     <input type="button" value="显示效果" id="btn">
     <input type="button" value="分离HTML和JS" id="separation">
     <input type="button" value="点我" id="p-click">
@@ -41,110 +47,162 @@
         <option value="5" id="op5">香蕉</option>
     </select>
  
-    <br>
-    <br>
-    <br>
-
-    <input type="button" value="点我" id="createBtn">
 
     <script src="common.js"></script>
     <script>
         // DOM: Document Object Model 文档对象模型 --- 操作页面的元素
-        // document.getElementById("btn").onclick = function() {
-        //     alert("这是一个弹窗");
-        // };
+        document.getElementById("btn").onclick = function() {
+            alert("这是一个弹窗");
+        };
 
-        // function clickDepart() {
-        //     alert("代码分离");
-        // }
+        function clickDepart() {
+            alert("代码分离");
+        }
 
-        // // 根据id获取文档的属性值
-        // var separation = document.getElementById("separation");
+        // 根据id获取文档的属性值
+        var separation = document.getElementById("separation");
         
-        // // 给属性值配置点击事件
-        // separation.onclick = clickDepart;
+        // 给属性值配置点击事件
+        separation.onclick = clickDepart;
 
-        // // 根据id获取按钮，给按钮加click方法，添加事件函数
-        // document.getElementById("p-click").onclick = function () {
-        //     document.getElementById("p1").innerText="我是一个p标签，我可以被改变";
-        // };
+        // 根据id获取按钮，给按钮加click方法，添加事件函数
+        document.getElementById("p-click").onclick = function () {
+            document.getElementById("p1").innerText="我是一个p标签，我可以被改变";
+        };
 
-        // // 凡是所有成对的标签，中间的文本内容都可以用 innerText 来处理
+        // 凡是所有成对的标签，中间的文本内容都可以用 innerText 来处理
 
-        // // document.getElementsByTagName("") 这个方法里面存的是标签名，是一个伪数组
+        // document.getElementsByTagName("") 这个方法里面存的是标签名，是一个伪数组
 
-        // function selectedBtn(sender) {
+        function selectedBtn(sender) {
             
-        // }
+        }
 
-        // var inputs = document.getElementsByTagName("input");
-        // for (let index = 0; index < inputs.length; index++) {
-        //     const element = inputs[index];
-        //     element.onclick = function() {
-        //         for (let i = 0; i < inputs.length; i++) {
-        //             const ele = inputs[i];
-        //             ele.value = "点我";
-        //         }
-        //         this.value = "被点了";
-        //     }
-        // }
+        var inputs = document.getElementsByTagName("input");
+        for (let index = 0; index < inputs.length; index++) {
+            const element = inputs[index];
+            element.onclick = function() {
+                for (let i = 0; i < inputs.length; i++) {
+                    const ele = inputs[i];
+                    ele.value = "点我";
+                }
+                this.value = "被点了";
+            }
+        }
 
-        // my$("inbtn").onclick = function () {
-        //     my$("op4").selected = true;
-        // };
+        my$("inbtn").onclick = function () {
+            my$("op4").selected = true;
+        };
 
-        // var lis = my$("uu").getElementsByTagName("li");
-        // for (let i = 0; i < lis.length; i++) {
-        //     console.log("aa");
-        //     const element = lis[i];
-        //     element.onmouseover = function() {
-        //         this.style.backgroundColor = "yellow";
-        //     };
-        //     element.onmouseout = function () {
-        //         this.style.backgroundColor = "";
-        //     };
-        // }
+        var lis = my$("uu").getElementsByTagName("li");
+        for (let i = 0; i < lis.length; i++) {
+            console.log("aa");
+            const element = lis[i];
+            element.onmouseover = function() {
+                this.style.backgroundColor = "yellow";
+            };
+            element.onmouseout = function () {
+                this.style.backgroundColor = "";
+            };
+        }
 
         // 节点的属性 （可以使用标签---元素.出来，可以使用属性节点.出来，文本节点.点出来）
         // nodeType: 节点的类型：1----标签， 2----属性， 3----文本
         // nodeName: 节点的名字：标签节点---大写的标签名字，属性节点---小写的属性名字，文本节点---#text
         // nodeValue: 节点的值：标签节点---null，属性节点---属性值，文本节点---文本内容
 
-        // // 12行代码，都是获取节点和元素
-        // var uuObj = document.getElementById("uu");
-        // // 子节点
-        // console.log(uuObj.childNodes);
-        // // 子元素
-        // console.log(uuObj.children);
-        // // 第一个子节点
-        // console.log(uuObj.firstChild);
-        // // 第一个子元素
-        // console.log(uuObj.firstElementChild);
-        // // 最后一个子节点
-        // console.log(uuObj.lastChild);
-        // // 最后一个子元素
-        // console.log(uuObj.lastElementChild);
-        // // 某个元素的前一个兄弟节点
-        // console.log(uuObj.previousSibling);
-        // // 某个元素的前一个兄弟元素
-        // console.log(uuObj.previousElementSibling);
-        // // 某个元素的后一个兄弟节点
-        // console.log(uuObj.nextSibling);
-        // // 某个元素的后一个兄弟元素
-        // console.log(uuObj.nextElementSibling);
+        // 12行代码，都是获取节点和元素
+        var uuObj = document.getElementById("uu");
+        // 子节点
+        console.log(uuObj.childNodes);
+        // 子元素
+        console.log(uuObj.children);
+        // 第一个子节点
+        console.log(uuObj.firstChild);
+        // 第一个子元素
+        console.log(uuObj.firstElementChild);
+        // 最后一个子节点
+        console.log(uuObj.lastChild);
+        // 最后一个子元素
+        console.log(uuObj.lastElementChild);
+        // 某个元素的前一个兄弟节点
+        console.log(uuObj.previousSibling);
+        // 某个元素的前一个兄弟元素
+        console.log(uuObj.previousElementSibling);
+        // 某个元素的后一个兄弟节点
+        console.log(uuObj.nextSibling);
+        // 某个元素的后一个兄弟元素
+        console.log(uuObj.nextElementSibling); -->
 
-        my$("createBtn").onclick = createOneElement;
+        <div id="box">
+            <input type="text" id="txt" value="">
+            <input type="button" id="btn" value="搜索">
+        </div>
+        <script src="common.js"></script>
+        <script>
+            var keys = ["小杨", "小红", "大张", "大钱", "小哈哈哈哈哈来了", "我是我们村最帅的", "我是我们家最棒的", "我是我们那嘎达最秀的"];
+            // 获取文本框注册键盘相关事件
+            my$("txt").onkeyup = function() {
+                var text = this.value;
+                // console.log(text);
+                // var result = keys.filter(function(ele) {
+                //     return ele.indexOf(text)==0;
+                // });
 
-        function createOneElement() {
-            if (my$("createBtn2")) {
-                return;
-            }
-            var obj = document.createElement("input");
-            obj.type = "button";
-            obj.value = "按钮";
-            obj.id = "createBtn2";
-            document.body.appendChild(obj);
-        }
+                if (my$("dvTemp")) {
+                    my$("box").removeChild(my$("dvTemp"));
+                }
+
+                // 遍历数组，如果数组包含当前字符串，那么就返回包含的数组
+                var result = Array();
+                for (let index = 0; index < keys.length; index++) {
+                    const element = keys[index];
+                    if (text !== "" && element.indexOf(text) == 0) {
+                        result.push(element);
+                    }
+                }
+                if (result.length) {
+                    console.log(result);
+                }
+                
+                // 临时数组、文本框是空的时候不用创建div,把div加入box
+                if (this.value.length == 0 || text.length == 0) {
+                    if (my$("dvTemp")) {
+                        document.getElementById("box").removeChild(my$("dvTemp"));
+                        return;
+                    }
+                }
+
+                if (result.length == 0) {
+                    return;
+                }
+
+                var divObj = document.createElement("div");
+                divObj.style.width = "132px";
+                divObj.style.border = "1px solid gray";
+                divObj.id = "dvTemp";
+                document.getElementById("box").appendChild(divObj);
+
+                // 循环遍历临时数组创建对应的 子元素
+                for (let index = 0; index < result.length; index++) {
+                    const element = result[index];
+                    var pObj = document.createElement("p");
+                    divObj.appendChild(pObj);
+                    pObj.innerText = element;
+                    pObj.style.margin = 0;
+                    pObj.style.padding = 0;
+                    pObj.style.marginTop = "5px";
+                    pObj.style.marginLeft = "5px";
+                    pObj.onmouseover = function() {
+                        this.style.backgroundColor = "yellow";
+                    }
+                    pObj.onmouseout = function() {
+                        this.style.backgroundColor = "";
+                    }
+                }
+            };
+
+        </script>
     </script>
 </body>
 </html>
