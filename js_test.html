@@ -1,0 +1,45 @@
+<!--
+ * @Author: your name
+ * @Date: 2019-11-24 20:28:42
+ * @LastEditTime: 2019-11-24 20:41:28
+ * @LastEditors: Please set LastEditors
+ * @Description: In User Settings Edit
+ * @FilePath: /javascript_practice/js_test.html
+ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <textarea name="textarea" id="" cols="30" rows="10">
+        同意协议，请同意我们的协议
+    </textarea>
+
+    <input type="button" id="btn" value="请仔细阅读协议（5）" disabled="disabled">
+
+    <script>
+        var time = 5
+        var time1 = setInterval(() => {
+            time--;
+            if (time > 0) {
+                document.getElementById("btn").value = "请仔细阅读协议（" + time + "）";
+            }
+            else {
+                console.log("-----");
+                // 停止定时器
+                clearInterval(time1);
+                // 设置同意
+                document.getElementById("btn").value = "同意";
+                document.getElementById("btn").disabled = "";
+                document.getElementById("btn").onclick = function () {
+                    console.log("按钮点击事件");
+                }
+            }
+        }, 1000);
+    </script>
+</body>
+</html>
