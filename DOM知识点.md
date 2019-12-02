@@ -2,7 +2,7 @@
  * @Description: In User Settings Edit
  * @Author: your name
  * @Date: 2019-11-21 22:06:00
- * @LastEditTime: 2019-11-23 14:42:16
+ * @LastEditTime: 2019-12-02 21:58:55
  * @LastEditors: Please set LastEditors
  -->
 
@@ -106,3 +106,12 @@ window.event 和 e都是事件参数对象，一个是IE的标准，一个是火
 
 addEventListener中第三个参数是控制事件阶段的，通过e.eventPhase这个属性可以知道
 当前事件是什么阶段。如果这个属性的值是 1、捕获阶段，2、目标阶段，3、冒泡阶段
+
+##### 获取元素的宽高等参数
+
+offset系列：
+
+offsetLeft: 距离左边的距离
+offsetTop: 距离右边的距离
+offsetHeight: 高度带边框
+offsetWidth: 宽度带边框
