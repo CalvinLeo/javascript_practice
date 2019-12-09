@@ -2,7 +2,7 @@
  * @Description: In User Settings Edit
  * @Author: your name
  * @Date: 2019-11-21 22:06:00
- * @LastEditTime: 2019-12-02 21:58:55
+ * @LastEditTime: 2019-12-08 22:48:35
  * @LastEditors: Please set LastEditors
  -->
 
@@ -115,3 +115,8 @@ offsetLeft: 距离左边的距离
 offsetTop: 距离右边的距离
 offsetHeight: 高度带边框
 offsetWidth: 宽度带边框
+
+scroll系列： 
+
+scrollWidth: 元素中内容实际的宽
+scrollHeight: 元素中内容实际的高
