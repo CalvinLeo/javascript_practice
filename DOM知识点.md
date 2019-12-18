@@ -2,7 +2,7 @@
  * @Description: In User Settings Edit
  * @Author: your name
  * @Date: 2019-11-21 22:06:00
- * @LastEditTime: 2019-12-08 22:48:35
+ * @LastEditTime: 2019-12-17 22:29:06
  * @LastEditors: Please set LastEditors
  -->
 
@@ -120,3 +120,49 @@ scroll系列：
 
 scrollWidth: 元素中内容实际的宽
 scrollHeight: 元素中内容实际的高
+
+##### 鼠标相关事件
+
+鼠标事件有一下几种：
+
+1、onclick 鼠标点击事件
+```
+box.onclick = function(e) {
+    console.log(e);
+}
+```
+
+2、onmousedown 鼠标按下事件
+```
+box.onmousedown = function(e) {
+    console.log(e);
+}
+```
+
+3、onmouseup 鼠标抬起事件
+```
+box.onmouseup = function(e) {
+    console.log(e);
+}
+```
+
+4、onmousemove 鼠标移动事件
+```
+box.onmousemove = function(e) {
+    console.log(e);
+}
+```
+
+5、onmouseover 鼠标经过事件
+```
+box.onmouseover = function(e) {
+    console.log(e);
+}
+```
+
+6、onmouseout 鼠标划出事件
+```
+box.onmouseout = function(e) {
+    console.log(e);
+}
+```
